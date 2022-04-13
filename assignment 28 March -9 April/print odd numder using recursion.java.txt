@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class FindOddNumber {
+	static int odd(int num1, int num2)
+	{
+		 if(num1>num2)
+			    return 0;
+			   System.out.printf(num1+" ");
+			return odd(num1+2,num2);
+		}
+		public static void main(String[] args) {
+           Scanner cs=new Scanner(System.in);
+		    int num1=1;
+                    num2=31;
+		   
+		 
+		    System.out.print("All odd number given range are:");
+		    odd(num1,num2);
+	        cs.close();
+		}
+	}
